@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newproj.controllers.HostellerInfoController">
+  <children>
+    <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox prefHeight="0.0" prefWidth="250.0" spacing="8.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 10px;">
+          <children>
+            <AnchorPane prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8px;">
+              <children>
+                <HBox alignment="CENTER_LEFT" onMouseClicked="#onDashBoardClick" prefHeight="0.0" prefWidth="0.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <FontAwesomeIconView glyphName="HOME" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" />
+                  </children>
+                  <padding>
+                    <Insets left="10.0" right="10.0" />
+                  </padding>
+                </HBox>
+              </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="20.0" onMouseClicked="#onHostellerInfoClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8px;">
+              <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="0.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <FontAwesomeIconView glyphName="MALE" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hostler Information" />
+                  </children>
+                  <padding>
+                    <Insets left="10.0" right="10.0" />
+                  </padding>
+                </HBox>
+              </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="70.0" onMouseClicked="#onFeesManagementClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8px;">
+              <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="0.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <FontAwesomeIconView glyphName="MONEY" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fess Management" />
+                  </children>
+                  <padding>
+                    <Insets left="10.0" right="10.0" />
+                  </padding>
+                </HBox>
+              </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="120.0" onMouseClicked="#onComplaintsClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8px;">
+              <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="0.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <FontAwesomeIconView glyphName="MONEY" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Complaints" />
+                  </children>
+                  <padding>
+                    <Insets left="10.0" right="10.0" />
+                  </padding>
+                </HBox>
+              </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="170.0" onMouseClicked="#onStaffManagementClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8px;">
+              <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="0.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <FontAwesomeIconView glyphName="MONEY" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Management" />
+                  </children>
+                  <padding>
+                    <Insets left="10.0" right="10.0" />
+                  </padding>
+                </HBox>
+              </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="220.0" onMouseClicked="#onAllotRoomsClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8px;">
+              <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="0.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <FontAwesomeIconView glyphName="MONEY" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Allot Rooms" />
+                  </children>
+                  <padding>
+                    <Insets left="10.0" right="10.0" />
+                  </padding>
+                </HBox>
+              </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="270.0" onMouseClicked="#onAttendanceClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8px;">
+              <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="0.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <FontAwesomeIconView glyphName="MONEY" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Attendence" />
+                  </children>
+                  <padding>
+                    <Insets left="10.0" right="10.0" />
+                  </padding>
+                </HBox>
+              </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="320.0" onMouseClicked="#onLogout" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8px;">
+              <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="0.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <FontAwesomeIconView glyphName="ANCHOR" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Log Out" />
+                  </children>
+                  <padding>
+                    <Insets left="10.0" right="10.0" />
+                  </padding>
+                </HBox>
+              </children>
+            </AnchorPane>
+          </children>
+          <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+          </padding>
+        </VBox>
+        <VBox spacing="20.0" style="-fx-padding: 20;">
+          <children>
+                  <HBox alignment="CENTER" prefHeight="44.0" prefWidth="910.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HOSTELLER DATA" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial" size="40.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="20">
+              <children>
+                <TextField fx:id="searchField" promptText="Search" style="-fx-background-radius: 15;" HBox.hgrow="ALWAYS" />
+                <Button fx:id="addStudentButton" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 15;" text="Add Student" />
+              </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+              <children>
+                <CheckBox fx:id="selectAllCheckBox" text="Select All" />
+                <Button fx:id="editSelectedButton" disable="true" style="-fx-background-radius: 15;" text="Edit Selected" />
+                <Button fx:id="deleteSelectedButton" disable="true" style="-fx-background-radius: 15;" text="Delete Selected" />
+              </children>
+            </HBox>
+            <TableView fx:id="hostelerTable" prefHeight="400.0" prefWidth="1578.0" style="-fx-border-color: #e0e0e0; -fx-grid-lines-visible: true;">
+              <columns>
+                <TableColumn fx:id="selectColumn" text="Select" />
+                <TableColumn fx:id="nameColumn" prefWidth="126.4000244140625" text="Name" />
+                <TableColumn fx:id="roomNoColumn" prefWidth="87.20002746582031" text="Room No." />
+                <TableColumn fx:id="admissionNumberColumn" minWidth="0.0" prefWidth="84.79998779296875" text="Admission Number" />
+                <TableColumn fx:id="dateOfAdmissionColumn" minWidth="0.0" prefWidth="107.20001220703125" text="Date of Admission" />
+                <TableColumn fx:id="contactColumn" prefWidth="124.0" text="Contact" />
+              </columns>
+            </TableView>
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>
